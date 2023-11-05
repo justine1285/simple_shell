@@ -15,7 +15,7 @@ char *par_prompt(void)
 
 	if (k == EOF)
 	{
-		memory((void *) buffer);
+		rmem((void *) buffer);
 		return (NULL);
 	}
 

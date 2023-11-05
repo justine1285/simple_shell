@@ -34,9 +34,9 @@ void ini_prompt(simpleshell_t *myform)
 			pattern(myform, args);
 			evaluate(args, myform, buffer);
 
-			memory_pointer((void *) args);
+			rmem_pointer((void *) args);
 		}
-		memory((void *) buffer);
-		memory((void *) env_path);
+		rmem((void *) buffer);
+		rmem((void *) env_path);
 	}
 }

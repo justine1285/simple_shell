@@ -7,8 +7,8 @@
 void sign_handler(int nos)
 {
 	(void) nos;
-	
-	sig(SIGINT, sign_handler);
-	disp("\n$");
-	flushh(stdout);
+
+	signal(SIGINT, sign_handler);
+	display_msg("\n$ ");
+	fflush(stdout);
 }

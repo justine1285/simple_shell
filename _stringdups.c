@@ -4,7 +4,7 @@
  * @strg: string to be duplicated
  * Return: char pointer to duplicte string
  */
-char *str_dups(char *strg);
+char *str_dups(char *strg)
 {
 	char *ghost;
 	int ssize;

@@ -76,7 +76,7 @@ char *handles_pattern(simpleshell_t *myform, char *word);
 char *value(simpleshell_t *info, int *id, char *str);
 void rmem(void *potr);
 void rmem_pointer(void **potr);
-void binary(simpleshell_t myform, char **args);
+void binary(simpleshell_t *myform, char **args);
 int manage_numb(simpleshell_t *myform, char *argument);
 void run(char *cmmd, char **argu, simpleshell_t *myform, char *buffer);
 int current_dir(char *command, char **argu, char *buff, simpleshell_t *myform);
@@ -91,5 +91,6 @@ int function(simpleshell_t *myform, char **args);
 int builtin(simpleshell_t *myform, char **args);
 void evaluate(char **args, simpleshell_t *myform, char *buffer);
 int _atoi(char *s);
+int print_char(char character);
 
 #endif

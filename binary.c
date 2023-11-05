@@ -17,7 +17,12 @@ void binary(simpleshell_t *myform, char **args)
 		k = manage_numb(myform, args[1]);
 	}
 
-	if z = myform->code_status;
+	if (k == 0)
+	{
+		return;
+	}
+
+	z = myform->code_status;
 
 	rmem_pointer((void **) args);
 	rmem((void *) myform->buff);

@@ -45,8 +45,9 @@ typedef struct __attribute__((__packed__))
 
 extern char **environ;
 
-void begin(simpleshell_t *myform);
+void begins(simpleshell_t *myform);
 int numb(int num);
+int writechars(char character)
 char *strings(int numbs);
 int numerical(unsigned int number);
 int gotLetter(char *string);
@@ -57,7 +58,7 @@ void ini_prompt(simpleshell_t *myform);
 void sign_handler(int nos);
 int display_msg(char *message);
 int diplay_err(char *message);
-void get_input(simpleshell_t *myform);
+void userInput(simpleshell_t *myform);
 int wCharacterToFD(char cha, int fil_d);
 int str_lenz(char *strg);
 char *str_cats(char *ghost, char *core);
@@ -65,7 +66,7 @@ char *str_cpys(char *ghost, char *core);
 char *str_dups(char *strg);
 int str_cmps(char *strg1, char *strg2);
 int outputToFD(char *mesg, int fil_d);
-int executable(char *name);
+int is_cmmd(char *path);
 int file(char *fname);
 char *exchange(simpleshell_t *myform, int *id, char *word);
 int wCharacterToFD(char cha, int fil_d);
@@ -78,7 +79,7 @@ void rmem(void *potr);
 void rmem_pointer(void **potr);
 void binary(simpleshell_t *myform, char **args);
 int manage_numb(simpleshell_t *myform, char *argument);
-void run(char *cmmd, char **argu, simpleshell_t *myform, char *buffer);
+void work(char *cmmd, char **aarg, simpleshell_t *myform, char *buffer);
 int current_dir(char *command, char **argu, char *buff, simpleshell_t *myform);
 void issues(simpleshell_t *myform);
 char *select_message(simpleshell_t myform);
@@ -90,7 +91,7 @@ void binary_env(simpleshell_t *myform, char **args);
 int function(simpleshell_t *myform, char **args);
 int builtin(simpleshell_t *myform, char **args);
 void evaluate(char **args, simpleshell_t *myform, char *buffer);
-int _atoi(char *s);
+int _atois(char *ss);
 int print_char(char character);
 
 #endif

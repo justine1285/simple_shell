@@ -10,7 +10,7 @@ int is_cmmd(char *path)
 
 	if (stat(path, &st) == 0)
 	{
-		if (st.st_mode & X_OX)
+		if (st.st_mode & X_OK)
 		{
 			return (1);
 		}

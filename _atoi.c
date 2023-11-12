@@ -6,12 +6,11 @@
  */
 int _atois(char *ss)
 {
-	int y;
-	unsigned int tally = 0, mag = 0, at = 0, pat = 1, w = 1;
+	unsigned int tally = 0, mag = 0, at = 0, pat = 1, w = 1, y;
 
 	while (*(ss + tally) != '\0')
 	{
-		if (mag > 0 && (*(ss +) < '0' || *(ss + tally) > '9'))
+		if (mag > 0 && (*(ss + tally) < '0' || *(ss + tally) > '9'))
 			break;
 
 		if (*(ss + tally) == '-')

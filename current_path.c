@@ -5,7 +5,7 @@
  * @myform: struct with data type
  * Return: perform task without returning
  */
-char current_path(char *paths, simpleshell_t *myform)
+void current_path(char *paths, simpleshell_t *myform)
 {
 	myform->curr_path = 0;
 

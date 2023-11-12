@@ -11,7 +11,7 @@ void ini_prompt(simpleshell_t *myform)
 	signal(SIGINT, sign_handler);
 	while (1)
 	{
-		get_input(myform);
+		userInput(myform);
 
 		env_path = get_env("PATH");
 		current_path(env_path, myform);

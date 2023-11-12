@@ -11,5 +11,5 @@ void binary_env(simpleshell_t *myform, char **args)
 	(void) myform;
 	(void) args;
 
-	full_env();
+	getAllEnvn();
 }

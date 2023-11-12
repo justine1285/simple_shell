@@ -10,7 +10,7 @@ int manage_numb(simpleshell_t *myform, char *argument)
 {
 	int controller;
 
-	controller = _atoi(argument);
+	controller = _atois(argument);
 	{
 		myform->code_status = 2;
 		myform->err_digits = 133;

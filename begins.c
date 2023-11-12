@@ -5,5 +5,5 @@
  */
 void begins(simpleshell_t *myform)
 {
-	initiateprompt(myform);
+	ini_prompt(myform);
 }

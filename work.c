@@ -35,7 +35,7 @@ void work(char *cmmd, char **aarg, simpleshell_t *myform, char *buffer)
 		waitpid(pid, &position, 0);
 		if (WIFEXITED(position))
 		{
-		myform->code_stat = WEXITSTATUS(position);
+		myform->code_status = WEXITSTATUS(position);
 		}
 	}
 }

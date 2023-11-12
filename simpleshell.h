@@ -47,7 +47,7 @@ extern char **environ;
 
 void begins(simpleshell_t *myform);
 int numb(int num);
-int writechars(char character)
+int writechars(char character);
 char *strings(int numbs);
 int numerical(unsigned int number);
 int gotLetter(char *string);
@@ -85,13 +85,12 @@ void issues(simpleshell_t *myform);
 char *select_message(simpleshell_t myform);
 void add_error(simpleshell_t *myform, char *more);
 char *get_env(const char *variable);
-char *current_path(char *paths, simpleshell_t *myform);
-void full_env(void);
+void current_path(char *paths, simpleshell_t *myform);
+void getAllEnvn(void);
 void binary_env(simpleshell_t *myform, char **args);
 int function(simpleshell_t *myform, char **args);
 int builtin(simpleshell_t *myform, char **args);
 void evaluate(char **args, simpleshell_t *myform, char *buffer);
 int _atois(char *ss);
-int print_char(char character);
 
 #endif

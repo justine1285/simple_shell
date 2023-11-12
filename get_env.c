@@ -4,7 +4,7 @@
  * @variable: the environ variable to get
  * Return: if successful printf(name of variable) else return NULL
  */
-char *get_env(const cha *varaible)
+char *get_env(const char *variable)
 {
 	char **k, *z, *x, *y;
 	int size;
@@ -22,7 +22,7 @@ char *get_env(const cha *varaible)
 			return (NULL);
 		}
 
-		if (str_lenz(x) !+ size)
+		if (str_lenz(x) != size)
 		{
 			free(z);
 			continue;
@@ -32,7 +32,7 @@ char *get_env(const cha *varaible)
 			x = strtok(NULL, "=");
 			y = str_dups(x);
 			free(z);
-			return(y):
+			return (y);
 		}
 		free(z);
 	}

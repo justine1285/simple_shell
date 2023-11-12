@@ -24,7 +24,7 @@ int main(int argcount, char **argvec)
 	myform->argc = argcount;
 	myform->argv = argvec;
 	myform->it_mode = isatty(0) == 1;
-	begin(myform);
+	begins(myform);
 
 	status = myform->code_status;
 

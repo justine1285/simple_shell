@@ -14,7 +14,6 @@ int manage_numb(simpleshell_t *myform, char *argument)
 	{
 		myform->code_status = 2;
 		myform->err_digits = 133;
-		add_error(myform, argument);
 		return (0);
 	}
 

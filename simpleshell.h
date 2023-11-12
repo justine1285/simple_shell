@@ -65,7 +65,7 @@ char *str_cats(char *ghost, char *core);
 char *str_cpys(char *ghost, char *core);
 char *str_dups(char *strg);
 int str_cmps(char *strg1, char *strg2);
-int outputToFD(char *mesg, int fil_d);
+int outputToFD(char *message, int file_des);
 int is_cmmd(char *path);
 int file(char *fname);
 char *exchange(simpleshell_t *myform, int *id, char *word);

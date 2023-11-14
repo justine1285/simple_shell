@@ -7,10 +7,10 @@ void getAllEnvn(void)
 {
 	int z;
 	char **snow;
-	
+
 	for (z = 0, snow = environ; snow[z] != NULL; z++)
 	{
 		display_msg(snow[z]);
-	       	writechars('\n');
+		writechars('\n');
 	}
 }

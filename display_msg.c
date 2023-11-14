@@ -6,5 +6,5 @@
  */
 int display_msg(char *message)
 {
-	return(outputToFD(message, 1));
+	return (outputToFD(message, 1));
 }

@@ -70,8 +70,8 @@ int myfile(char *fname);
 char *exchange(simpleshell_t *myform, int *id, char *word);
 void *its_realloc(void *potr, unsigned int os, unsigned int ns);
 char *env(simpleshell_t *myform, char *env_var);
-void pattern(simpleshell_t *myform, char **args);
-char *handles_pattern(simpleshell_t *myform, char *word);
+void analP(simpleshell_t *myform, char **aarg);
+char *hand_p(simpleshell_t *myform, char *alp);
 char *value(simpleshell_t *info, int *id, char *str);
 void rmem(void *potr);
 void rmem_pointer(void **potr);
@@ -80,7 +80,11 @@ int manage_numb(simpleshell_t *myform, char *argument);
 void work(char *cmmd, char **aarg, simpleshell_t *myform, char *buffer);
 int current_dir(char *commands, char **aarg, char *buff, simpleshell_t *myform);
 void issues(simpleshell_t *myform);
+<<<<<<< HEAD
 char *choose_message(simpleshell_t myform);
+=======
+char *select_message(simpleshell_t myform);
+>>>>>>> 8acc76d9b820ffa0fd540e9334d67bd3692a288e
 void add_error(simpleshell_t *myform, char *extra);
 char *get_env(const char *variable);
 void current_path(char *paths, simpleshell_t *myform);

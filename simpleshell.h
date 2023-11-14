@@ -68,12 +68,11 @@ int str_cmps(char *strg1, char *strg2);
 int outputToFD(char *message, int file_des);
 int is_cmmd(char *path);
 int myfile(char *fname);
-char *exchange(simpleshell_t *myform, int *id, char *word);
+char *ex_change(simpleshell_t *myform, int *index, char *alp);
 void *its_realloc(void *potr, unsigned int os, unsigned int ns);
-char *env(simpleshell_t *myform, char *env_var);
+char *minus_env(simpleshell_t *myform, char *e_var);
 void analP(simpleshell_t *myform, char **aarg);
 char *hand_p(simpleshell_t *myform, char *alp);
-char *value(simpleshell_t *info, int *id, char *str);
 void rmem(void *potr);
 void rmem_pointer(void **potr);
 void binary(simpleshell_t *myform, char **args);
@@ -93,4 +92,5 @@ void evaluate(char **args, simpleshell_t *myform, char *buffer);
 int _atois(char *ss);
 int fixchar_FD(char car, int fil_d);
 char *select(char *direcname, simpleshell_t *myform);
+char *subValue(simpleshell_t *myform, int *index, char *strg)
 #endif

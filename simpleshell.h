@@ -79,7 +79,7 @@ void binary(simpleshell_t *myform, char **args);
 int manage_numb(simpleshell_t *myform, char *argument);
 void work(char *cmmd, char **aarg, simpleshell_t *myform, char *buffer);
 int current_dir(char *commands, char **aarg, char *buff, simpleshell_t *myform);
-void issues(simpleshell_t *myform);
+void issues_error(simpleshell_t *myform);
 char *choose_message(simpleshell_t myform);
 void add_error(simpleshell_t *myform, char *extra);
 char *get_env(const char *variable);

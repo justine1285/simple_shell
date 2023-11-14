@@ -48,7 +48,7 @@ extern char **environ;
 void begins(simpleshell_t *myform);
 int numb(int num);
 int writechars(char character);
-char *strings(int numbs);
+char *stringly(int nums);
 int numerical(unsigned int number);
 int gotLetter(char *string);
 char **tokenWords(char *string, const char *del);

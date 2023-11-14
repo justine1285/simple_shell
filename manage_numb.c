@@ -11,9 +11,12 @@ int manage_numb(simpleshell_t *myform, char *argument)
 	int controller;
 
 	controller = _atois(argument);
+
+	if (controller < 0 || gotLetter(argument))
 	{
 		myform->code_status = 2;
 		myform->err_digits = 133;
+		add_error(myform, argument);
 		return (0);
 	}
 

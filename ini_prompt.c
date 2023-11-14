@@ -31,6 +31,8 @@ void ini_prompt(simpleshell_t *myform)
 
 			myform->myarguments = args;
 			myform->buff = buffer;
+			AnalP(myform, args);
+			evaluate(args, myfom, buffer);
 
 			rmem_pointer((void *) args);
 		}

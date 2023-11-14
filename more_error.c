@@ -12,7 +12,7 @@ void add_error(simpleshell_t *myform, char *extra)
 	int ns, ms, extra_size;
 
 	nos = NULL;
-	mesg = selectMesg(*myform);
+	mesg = choose_message(*myform);
 	mesg = stringly(myform->n_cmmd);
 
 	ns = str_lenz(nos);

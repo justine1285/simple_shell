@@ -68,7 +68,7 @@ int outputToFD(char *message, int file_des);
 int is_cmmd(char *path);
 int myfile(char *fname);
 char *exchange(simpleshell_t *myform, int *id, char *word);
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+void *its_realloc(void *potr, unsigned int os, unsigned int ns);
 char *env(simpleshell_t *myform, char *env_var);
 void pattern(simpleshell_t *myform, char **args);
 char *handles_pattern(simpleshell_t *myform, char *word);

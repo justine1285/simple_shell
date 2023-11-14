@@ -9,7 +9,7 @@ char *stringly(int nums)
 	char *nos;
 	int k, dig;
 
-	dig = number(nums);
+	dig = numb(nums);
 	nos = malloc(dig * sizeof(char) + 1);
 	if (nos == NULL)
 		return (NULL);

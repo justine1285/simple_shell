@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * current_dir - program executes command if required
  * @commands: commands to be executed

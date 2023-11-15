@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * sign_handler - program that handles SIGINT
  * @nos: unused argument

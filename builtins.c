@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * function - checks for executables builtins
  * @myform: a struct with a data type of info

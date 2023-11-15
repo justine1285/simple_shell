@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * display_msg - prints a message to the stdout
  * @message: message to print to stdout

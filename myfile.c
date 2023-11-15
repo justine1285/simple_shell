@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * myfile - program checks if a name or path is a file or binary
  * @fname: file to check permission to run

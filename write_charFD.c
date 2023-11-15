@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * fixchar_FD - program writes character to particular file descriptor
  * @car: the character to br printed

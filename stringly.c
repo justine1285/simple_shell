@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * stringly - function converts number to string
  * @nums: number to be converted

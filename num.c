@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * numerical - check if a parameter is a digir
  * @number: number needed to check

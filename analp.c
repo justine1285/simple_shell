@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * analP - function to analyze pattern
  * @myform: enter argument

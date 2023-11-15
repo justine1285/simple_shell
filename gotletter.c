@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * gotLetter - search if a string contains letter
  * @string: string to check if letter is present

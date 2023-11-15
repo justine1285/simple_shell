@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * par_prompt - this function uses the getline function to read
  * the line of the prompt

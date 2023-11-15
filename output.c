@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * outputToFD - prints a string
  * @message: prints a string instead of a character

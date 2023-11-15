@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * minus_env - function substitutes environment variables
  * @myform: enter argument

@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * tokenWords - splits a string into words
  * @str: string to separate

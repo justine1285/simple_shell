@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * _atois - program converts string to int
  * @ss: string to be converted

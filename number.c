@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * numb - count number of digits a number has
  * @num: the given number

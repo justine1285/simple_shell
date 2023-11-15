@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * display_err - function prints he std error (2)
  * @message: message to be printed is passed here

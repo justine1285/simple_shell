@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * str_lenz - program returns length of string
  * @strg: string length to check

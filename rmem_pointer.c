@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * rmem_pointer - program frees a pointer to a pointer
  * @potr: pointer of pointer to be freed

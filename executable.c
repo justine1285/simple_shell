@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * is_cmmd - function checks if file is an executable command
  * @path: the path of the file to check

@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * writechars - prints char to stdout
  * @character: character to print

@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * wordMerge - joins 3 words with a delimeter
  * @word1: word1 to join

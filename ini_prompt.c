@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * ini_prompt - This function represents the interactibe prompt
  * @myform: struct of general information

@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * hand_p- handles the pattern
  * @myform: struct argument

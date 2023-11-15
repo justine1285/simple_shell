@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * issues_error - function helps to handle error and
  * print the error encountered

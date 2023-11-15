@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * choose_message - check for error code and selec a match
  * with the error code gotten

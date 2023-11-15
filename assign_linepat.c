@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * assign_linepat - reassigns the linepat variable for get_line
  * @linepat: a buffer to store an input string

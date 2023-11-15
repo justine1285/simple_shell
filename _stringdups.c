@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * str_dups - program duplicates a string
  * @strg: string to be duplicated

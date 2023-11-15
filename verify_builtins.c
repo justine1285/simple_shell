@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * builtin - function helps confirm a builtin command
  * @myform: struct with data type about the shell

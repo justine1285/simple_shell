@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * binary_env - function helps to implement
  * the builtin of the env

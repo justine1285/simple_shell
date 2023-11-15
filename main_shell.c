@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * main - the main program of the simple shell
  * Description: this program runs a basic shell

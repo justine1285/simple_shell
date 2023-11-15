@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * get_line - reads input from a stream
  * @linepat: a buffer to store the input

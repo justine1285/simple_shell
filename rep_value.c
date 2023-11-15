@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * subValue - replaces a pattern value
  * @myform: struct parameter

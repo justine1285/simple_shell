@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * str_cpys - program that points to a char
  * @ghost: pointer to character

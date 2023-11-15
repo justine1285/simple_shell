@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * select_dir - function finds directories when its needed
  * @direcname: directory name

@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * userInput - prompt for the shell program
  * @myform: struct of information

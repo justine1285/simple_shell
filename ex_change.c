@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * ex_change - replace or exchange function
  * @myform: a struct argument that takes a pointer

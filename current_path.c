@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * current_path - checks the arrangement of the path
  * @paths: the path to check

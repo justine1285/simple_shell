@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * work - receives command in the child process
  * @cmmd: receives execution command
@@ -35,7 +36,7 @@ void work(char *cmmd, char **aarg, simpleshell_t *myform, char *buffer)
 		waitpid(pid, &position, 0);
 		if (WIFEXITED(position))
 		{
-		myform->code_status = WEXITSTATUS(position);
+			myform->code_status = WEXITSTATUS(position);
 		}
 	}
 }

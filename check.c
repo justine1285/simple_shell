@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * check - run analysis on args passed to the prompt
  * @args: argument to check for

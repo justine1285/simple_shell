@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * add_error - function prints the error
  * @myform: struct parameter

@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * binary - exits the shell
  * Description: so many memory are used in the program,

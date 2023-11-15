@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * get_env - function that helps you get an environ variable
  * @variable: the environ variable to get

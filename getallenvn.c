@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * getAllEnvn - program to get all environment variables
  * Return: nothing

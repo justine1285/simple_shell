@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * manage_numb - controls the argument of exit builtin
  * @myform: struct to access its type

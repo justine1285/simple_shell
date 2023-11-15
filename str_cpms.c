@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * str_cmps - program compares two strings
  * @strg1: string one

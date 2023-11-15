@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * its_realloc - to reallocate memory
  * @potr: pointer allocated to old memory

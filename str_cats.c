@@ -1,4 +1,5 @@
 #include "simpleshell.h"
+#include "shell.h"
 /**
  * str_cats - function that concatenates two strings
  * @ghost: destination string

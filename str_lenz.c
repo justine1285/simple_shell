@@ -8,10 +8,9 @@ int str_lenz(char *strg)
 {
 	int lent = 0;
 
-	if (!strg)
-		return (0);
-
-	while (*strg++)
+	while (strg[lent] != '\0')
+	{
 		lent++;
+	}
 	return (lent);
 }

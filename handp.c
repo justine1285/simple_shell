@@ -5,7 +5,7 @@
  * @alp: ptr to a string
  * Return: ptr to a string
  */
-char *hand_p(simpleshell_t myform, char *alp)
+char *hand_p(simpleshell_t *myform, char *alp)
 {
 	int k;
 

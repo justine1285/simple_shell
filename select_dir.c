@@ -1,11 +1,11 @@
 #include "simpleshell.h"
 /**
- * select - function finds directories when its needed
+ * select_dir - function finds directories when its needed
  * @direcname: directory name
  * @myform: struct that defines a certain data type
  * Return: pointer to a string
  */
-char *select(char *direcname, simpleshell_t *myform)
+char *select_dir(char *direcname, simpleshell_t *myform)
 {
 	int period;
 	char *path, *path_temp, *tok, *del;
@@ -22,7 +22,7 @@ char *select(char *direcname, simpleshell_t *myform)
 
 	period = str_lenz(direcname) + 2;
 	del = malloc(period * sizeof(char));
-	del = str_coys(del, "/");
+	del = str_cpys(del, "/");
 	del = str_cats(del, direcname);
 
 	while (tok != NULL)

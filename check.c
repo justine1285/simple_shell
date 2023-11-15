@@ -1,12 +1,12 @@
-#include "simpleshell.c"
+#include "simpleshell.h"
 /**
  * check - run analysis on args passed to the prompt
  * @args: argument to check for
- * @mtform: a struct created of a certain datatype
+ * @myform: a struct created of a certain datatype
  * @buffer: line accepted
  * Return: nothing, just do the task
  */
-void evaluate(char **args, simpleshell_t *myform, char *buffer)
+void check(char **args, simpleshell_t *myform, char *buffer)
 {
 	char *cmmd;
 	int upgrade;
@@ -21,12 +21,12 @@ void evaluate(char **args, simpleshell_t *myform, char *buffer)
 	{
 		return;
 	}
-	upgrade = file(cmmd);
+	upgrade = myfile(cmmd);
 	if (upgrade == 0)
 	{
 		myform->code_status = 126;
 		myform->err_digits = 13;
-		issues_error(mytype);
+		issues_error(myform);
 		return;
 	}
 	if (upgrade == 1)
@@ -36,7 +36,7 @@ void evaluate(char **args, simpleshell_t *myform, char *buffer)
 	}
 	if (current_dir(cmmd, args, buffer, myform) == 1)
 		return;
-	myform->cmmd_path = choose_message(cmmd, myform);
+	myform->cmmd_path = choose_message(myform);
 	if (myform->cmmd_path != NULL)
 	{
 		work(myform->cmmd_path, args, myform, buffer);
@@ -44,6 +44,6 @@ void evaluate(char **args, simpleshell_t *myform, char *buffer)
 		return;
 	}
 	myform->code_status = 127;
-	myform->err_diguts = 132;
+	myform->err_digits = 132;
 	issues_error(myform);
 }

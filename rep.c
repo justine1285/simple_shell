@@ -5,7 +5,7 @@
  * @e_var: enter environment var
  * Return: pointer to string
  */
-char *minus_env(simpleshell_t *myform, char *e_var);
+char *minus_env(simpleshell_t *myform, char *e_var)
 {
 	char *environ;
 

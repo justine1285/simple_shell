@@ -53,12 +53,12 @@ char *con_number(int numbs);
 int numerical(unsigned int number);
 int gotLetter(char *string);
 char **tokenWords(char *string, const char *del);
-char **wordMerge(char *word1, char *word2, char *word3, const char *del);
+char *wordMerge(char *word1, char *word2, char *word3, const char *del);
 char *par_prompt(void);
 void ini_prompt(simpleshell_t *myform);
 void sign_handler(int nos);
 int display_msg(char *message);
-int diplay_err(char *message);
+int display_err(char *message);
 void userInput(simpleshell_t *myform);
 int str_lenz(char *strg);
 char *str_cats(char *ghost, char *core);
@@ -80,7 +80,7 @@ int manage_numb(simpleshell_t *myform, char *argument);
 void work(char *cmmd, char **aarg, simpleshell_t *myform, char *buffer);
 int current_dir(char *commands, char **aarg, char *buff, simpleshell_t *myform);
 void issues_error(simpleshell_t *myform);
-char *choose_message(simpleshell_t myform);
+char *choose_message(simpleshell_t *myform);
 void add_error(simpleshell_t *myform, char *extra);
 char *get_env(const char *variable);
 void current_path(char *paths, simpleshell_t *myform);
@@ -88,9 +88,10 @@ void getAllEnvn(void);
 void binary_env(simpleshell_t *myform, char **args);
 int function(simpleshell_t *myform, char **args);
 int builtin(simpleshell_t *myform, char **args);
-void evaluate(char **args, simpleshell_t *myform, char *buffer);
+void check(char **args, simpleshell_t *myform, char *buffer);
 int _atois(char *ss);
 int fixchar_FD(char car, int fil_d);
-char *select(char *direcname, simpleshell_t *myform);
-char *subValue(simpleshell_t *myform, int *index, char *strg)
+char *select_dir(char *direcname, simpleshell_t *myform);
+char *subValue(simpleshell_t *myform, int *index, char *strg);
+
 #endif

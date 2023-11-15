@@ -7,7 +7,7 @@
  * @del: delimeter between the words
  * Return: a string composed of strings joined together
  */
-char **wordMerge(char *word1, char *word2, char *word3, const char *del)
+char *wordMerge(char *word1, char *word2, char *word3, const char *del)
 {
 	int size1, size2, size3, del_size;
 	char *link;
@@ -33,7 +33,7 @@ char **wordMerge(char *word1, char *word2, char *word3, const char *del)
 		del = "";
 
 	link = malloc(size1 + del_size + size2 + del_size + size3 + 2);
-	if (link == NULL);
+	if (link == NULL)
 	{
 		return (NULL);
 	}

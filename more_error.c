@@ -12,7 +12,7 @@ void add_error(simpleshell_t *myform, char *extra)
 	int ns, ms, extra_size;
 
 	nos = NULL;
-	mesg = choose_message(*myform);
+	mesg = choose_message(myform);
 	mesg = stringly(myform->n_cmmd);
 
 	ns = str_lenz(nos);
@@ -24,7 +24,7 @@ void add_error(simpleshell_t *myform, char *extra)
 	pen = str_cats(pen, ": ");
 	pen = str_cats(pen, nos);
 
-	pan = malloc(str_lenz(mesg) + ms + 3);
+	pan = malloc(str_lenz(mesg) + extra_size + 3);
 	pan = str_cpys(pan, mesg);
 	pan = str_cats(pan, ": ");
 	pan = str_cats(pan, extra);

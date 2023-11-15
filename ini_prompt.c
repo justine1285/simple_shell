@@ -32,7 +32,7 @@ void ini_prompt(simpleshell_t *myform)
 			myform->myarguments = args;
 			myform->buff = buffer;
 			analP(myform, args);
-			evaluate(args, myfom, buffer);
+			check(args, myform, buffer);
 
 			rmem_pointer((void *) args);
 		}

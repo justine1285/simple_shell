@@ -22,4 +22,5 @@ char *choose_message(simpleshell_t *myform)
 		if (myform->err_digits == mesg[k].password)
 			return (mesg[k].mesg);
 
-	return ("");}
+	return ("");
+}

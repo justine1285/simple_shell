@@ -20,6 +20,9 @@ int is_cmmd(char *path)
 			return (-1);
 		}
 	}
-
-	return (-10);
+	else
+	{
+		perror("stat");
+		return (-10);
+	}
 }

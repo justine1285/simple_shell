@@ -21,6 +21,7 @@ char **tokenWords(char *str, const char *del)
 		{
 			if (token[0] == '#')
 				break;
+			temp = its_realloc(word, former, (recent + 1) * sizeof(char *)); 
 			former = (recent + 1) * sizeof(char *);
 			if (temp == NULL)
 				break;

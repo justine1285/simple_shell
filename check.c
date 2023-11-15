@@ -12,7 +12,7 @@ void check(char **args, simpleshell_t *myform, char *buffer)
 	char *cmmd;
 	int upgrade;
 
-	if (*args == NULL || args == NULL)
+	if (args == NULL || *args == NULL)
 	{
 		return;
 	}
@@ -37,7 +37,7 @@ void check(char **args, simpleshell_t *myform, char *buffer)
 	}
 	if (current_dir(cmmd, args, buffer, myform) == 1)
 		return;
-	myform->cmmd_path = choose_message(myform);
+	myform->cmmd_path = choose_message(*myform);
 	if (myform->cmmd_path != NULL)
 	{
 		work(myform->cmmd_path, args, myform, buffer);

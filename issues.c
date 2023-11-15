@@ -13,7 +13,7 @@ void issues_error(simpleshell_t *myform)
 	int nos_size, mesg_size;
 
 	nos = NULL;
-	mesg = choose_message(myform);
+	mesg = choose_message(*myform);
 	nos = stringly(myform->n_cmmd);
 
 	nos_size = str_lenz(nos);

@@ -6,7 +6,7 @@
  * @myform: a struct to the shell
  * Return: a character pointer to the message
  */
-char *choose_message(simpleshell_t *myform)
+char *choose_message(simpleshell_t myform)
 {
 	int k;
 	int options;
@@ -20,7 +20,7 @@ char *choose_message(simpleshell_t *myform)
 
 	options = sizeof(mesg) / sizeof(mesg[0]);
 	for (k = 0; k < options; k++)
-		if (myform->err_digits == mesg[k].password)
+		if (myform.err_digits == mesg[k].password)
 			return (mesg[k].mesg);
 
 	return ("");

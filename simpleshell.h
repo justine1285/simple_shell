@@ -94,5 +94,7 @@ int _atois(char *ss);
 int fixchar_FD(char car, int fil_d);
 char *select_dir(char *direcname, simpleshell_t *myform);
 char *subValue(simpleshell_t *myform, int *index, char *strg);
+ssize_t get_line(char **linepat, size_t *num, FILE *direction);
+void assign_linepat(char **linepat, size_t *num, char *buffer, size_t b);
 
 #endif
